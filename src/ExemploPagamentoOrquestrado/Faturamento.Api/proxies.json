@@ -6,7 +6,7 @@
       "disabled": false,
       "matchCondition": {
         "methods": [ "GET" ],
-        "route": "/{*all}"
+        "route": "/loaderio-572af511c8199ec5fa1fbcb5962e0d2c.txt"
       },
       "backendUri": "https://%STORAGE_HOST%/{all}",
       "requestOverrides": {

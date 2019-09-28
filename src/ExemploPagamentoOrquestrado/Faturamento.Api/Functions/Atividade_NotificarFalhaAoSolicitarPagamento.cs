@@ -4,7 +4,7 @@ using Microsoft.Azure.WebJobs.ServiceBus;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
-namespace Faturamento.Api
+namespace Faturamento.Api.Functions
 {
     public sealed class Atividade_NotificarFalhaAoSolicitarPagamento
     {

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
-namespace Faturamento.Api
+namespace Faturamento.Api.Functions
 {
     public sealed class Atividade_FecharPedido
     {

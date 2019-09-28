@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Faturamento.Api
+namespace Faturamento.Api.Functions
 {
     public static class WorkFlow_ConfirmarPagamento
     {

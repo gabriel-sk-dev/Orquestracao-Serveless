@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Faturamento.Api
+namespace Faturamento.Api.Functions
 {
     public class HttpTrigger_ConfirmarPagamento
     {
