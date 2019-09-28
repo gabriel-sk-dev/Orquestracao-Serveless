@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "all": {
+      "debug": false,
+      "disabled": false,
+      "matchCondition": {
+        "methods": [ "GET" ],
+        "route": "/{*all}"
+      },
+      "backendUri": "https://%STORAGE_HOST%/{all}",
+      "requestOverrides": {
+      },
+      "responseOverrides": {
+        "response.headers.FUNCTION-PROXY": "true"
+      }
+    }
+  }
+}
