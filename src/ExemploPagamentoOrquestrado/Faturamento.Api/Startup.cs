@@ -13,6 +13,7 @@ namespace Faturamento.Api
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
+            //Testes
             string SqlConnection = Environment.GetEnvironmentVariable("SqlConnectionString");
             builder.Services.AddDbContext<EFContexto>(options =>
             {
