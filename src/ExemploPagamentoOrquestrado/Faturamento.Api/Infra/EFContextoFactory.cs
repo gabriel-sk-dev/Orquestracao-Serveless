@@ -9,7 +9,7 @@ namespace Faturamento.Api.Infra
         public EFContexto CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<EFContexto>();
-            optionsBuilder.UseSqlServer("Server = tcp:azuredayserveless.database.windows.net, 1433; Initial Catalog = azureday; Persist Security Info = False; User ID = gskohlrausch; Password = azureday@2019; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
+            optionsBuilder.UseSqlServer("Server = [ENDERECO], 1433; Initial Catalog = [BASE]; Persist Security Info = False; User ID = [USUARIO]; Password = [PASSWORD]; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
 
             return new EFContexto(optionsBuilder.Options);
         }
