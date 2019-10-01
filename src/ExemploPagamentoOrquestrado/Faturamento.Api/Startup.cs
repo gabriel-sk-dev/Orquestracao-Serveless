@@ -15,14 +15,14 @@ namespace Faturamento.Api
         {
             //Testes
             string SqlConnection = Environment.GetEnvironmentVariable("SqlConnectionString");
-            builder.Services.AddDbContext<EFContexto>(options =>
-            {
-                options.UseSqlServer(SqlConnection);
-            });
             //builder.Services.AddDbContext<EFContexto>(options =>
             //{
-            //    options.UseSqlServer(SqlConnection, o => o.EnableRetryOnFailure());
+            //    options.UseSqlServer(SqlConnection);
             //});
+            builder.Services.AddDbContext<EFContexto>(options =>
+            {
+                options.UseSqlServer(SqlConnection, o => o.EnableRetryOnFailure());
+            });
             builder.Services.AddSingleton<PagamentoService>(new PagamentoService(@"https://azureday-serveless-cobranca.azurewebsites.net"));
             builder.Services.AddScoped<CriarPedidoGerenciadorComando>();
             builder.Services.AddScoped<SolicitarPagamentoGerenciadorComando>();
